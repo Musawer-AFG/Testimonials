@@ -33,6 +33,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-grey-100);
 }
 
 section {
@@ -159,6 +160,10 @@ article .author {
 
 /* Table size */
 @media screen and (max-width: 59.077rem) {
+  html {
+    height: unset;
+  }
+
   section {
     max-width: 49.769rem;
     grid-template: repeat(4, auto) / repeat(2, 1fr);
@@ -178,6 +183,10 @@ article .author {
 
 /* Mobile size */
 @media screen and (max-width: 28.846rem) {
+  html {
+    height: unset;
+  }
+
   section {
     max-width: 23.462rem;
     grid-template: repeat(5, auto) / 1fr;
